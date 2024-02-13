@@ -6,17 +6,13 @@ This directory contains the dotfiles for my system
 
 Ensure you have the following installed on your system
 
-### Git
+### Requirements
 
 Install using your package manager
-```
-pacman -S git flameshot i3 nvim tmux kitty picom
-```
 
-### Stow
-
+#### Pacman install
 ```
-pacman -S stow
+pacman -S git stow flameshot i3 nvim tmux kitty
 ```
 
 ## Installation
