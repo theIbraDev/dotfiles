@@ -26,6 +26,10 @@ autocmd("BufWinEnter", {
         -- Allows you to push to a branch other than current branch NOTE: It allows me to easily set the branch i am pushing and any tracking needed if i did not set the branch up correctly
         vim.keymap.set("n", "<leader>gp", ":Git push -u origin ", opts);
 
+	-- TODO: Add a hotkey to add a new origin. very practical
+	-- if we don't have an origin set up for the current
+	-- repository.
+	-- vim.keymap.set(
         -- Rebase current branch into X branch
         vim.keymap.set("n", "<leader>gr", ":Git rebase ", opts);
 
