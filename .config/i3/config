@@ -183,6 +183,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 
+# Control position and size of windows
 mode "resize" {
 # Manual size changes by 10 px or 10 ppt
         bindsym l resize shrink width 10 px
@@ -192,6 +193,8 @@ mode "resize" {
 # Make the window a fixed size
 # Floating window center
 bindsym $mod+x resize set 2540 1410 ; move position center
+# Floating small window center
+bindsym $mod+v resize set 1590 810 ; move position center
 # Aside floating window
 bindsym $mod+c resize set 1290 1410 ; move position 50ppt 2px
 # back to normal: Enter or Escape or $mod+r
