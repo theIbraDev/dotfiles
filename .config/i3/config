@@ -150,7 +150,7 @@ bindsym $mod+6 workspace number $ws16
 bindsym $mod+7 workspace number $ws17
 bindsym $mod+8 workspace number $ws18
 bindsym $mod+9 workspace number $ws19
-bindsym $mod+10 workspace number $ws20
+bindsym $mod+0 workspace number $ws20
 #Move focused container to workspace
 bindsym mod1+Shift+1 move container to workspace number $ws1
 bindsym mod1+Shift+2 move container to workspace number $ws2
@@ -171,7 +171,7 @@ bindsym $mod+Shift+6 move container to workspace number $ws16
 bindsym $mod+Shift+7 move container to workspace number $ws17
 bindsym $mod+Shift+8 move container to workspace number $ws18
 bindsym $mod+Shift+9 move container to workspace number $ws19
-bindsym $mod+Shift+10 move container to workspace number $ws20
+bindsym $mod+Shift+0 move container to workspace number $ws20
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
