@@ -66,8 +66,20 @@ pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git
 - Use `yay -Y --devel --save` to make development package updates permanently
   enabled (`yay` and `yay -Syu` will then always check dev packages)
 
-### Usage
+#### Usage
 
 Use 'yay steam' to search for steam packages. From there you can install from the menu the packages you want.
 
+### Open Broadcaster Software
 
+If the browser plugin is required, we have to use the AUR package obs-studio-git
+
+- Yay is required for this.
+```
+yay obs-studio-git
+```
+If not, just use the official stable one:
+
+```
+sudo pacman -S obs-studio
+```
