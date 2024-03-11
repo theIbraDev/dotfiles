@@ -53,9 +53,9 @@ If you want to do all of this at once, we can chain the commands like so:
 pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 ```
 
-### First use of yay
+#### First use of yay
 
-#### Development packages upgrade
+##### Development packages upgrade
 
 - Use `yay -Y --gendb` to generate a development package database for `*-git`
   packages that were installed without yay.
@@ -69,3 +69,5 @@ pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git
 ### Usage
 
 Use 'yay steam' to search for steam packages. From there you can install from the menu the packages you want.
+
+
