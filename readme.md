@@ -1,18 +1,25 @@
 # My dotfiles
 
-This directory contains the dotfiles for my system
-
 ## Requirements
 
 Ensure you have the following installed on your system
 
 ### Requirements
 
-Install using your package manager
+- [Git](https://git-scm.com/downloads)
+- [Stow](https://www.gnu.org/software/stow/)
+- [Flameshot](https://flameshot.org/)
+- [i3 Window Manager](https://i3wm.org/)
+- [Neovim](https://neovim.io/)
+- [tmux](https://github.com/tmux/tmux)
+- [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
+- [Brave Browser](https://brave.com/)
+- [LibreOffice](https://www.libreoffice.org/)
 
+I will be using pacman. I use arch btw,
 #### Pacman install
 ```
-pacman -S git stow flameshot i3 nvim tmux kitty brave libreoffice
+$ pacman -S git stow flameshot i3 nvim tmux kitty brave libreoffice
 ```
 
 ## Installation dotfiles
@@ -24,13 +31,19 @@ $ git clone git@github.com/rossvold/dotfiles.git
 $ cd dotfiles
 ```
 
-To create the symlinks open your HOME/dotfiles repository, use GNU stow to create symlinks
-
+If you also want my nvim config, you need to populate git submodules:
 ```
-HOME/dotfiles
+$ cd dotfiles
+$ git submodule update --init --recursive
+```
+
+#### Usage
+
+We use GNU Stow to populate symlinks where needed in your machine, run:
+```
+$ ~/dotfiles
 $ stow .
 ```
-
 ## Optional installation
 
 ### yay
