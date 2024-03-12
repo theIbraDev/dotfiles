@@ -37,13 +37,14 @@ $ cd dotfiles
 $ git submodule update --init --recursive
 ```
 
-#### Usage
+#### First time setup
 
 We use GNU Stow to populate symlinks where needed in your machine, run:
 ```
 $ ~/dotfiles
 $ stow .
 ```
+
 ## Optional installation
 
 ### yay
@@ -79,7 +80,7 @@ pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git
 - Use `yay -Y --devel --save` to make development package updates permanently
   enabled (`yay` and `yay -Syu` will then always check dev packages)
 
-#### Usage
+#### Usage of yay
 
 Use 'yay steam' to search for steam packages. From there you can install from the menu the packages you want.
 
