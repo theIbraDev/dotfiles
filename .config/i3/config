@@ -231,3 +231,7 @@ bindsym $mod+Shift+o exec --no-startup-id "xrandr --output DP-1 --off; sleep 3; 
 
 # Take a screenshot flameshot
 bindsym $mod+Shift+control+s exec --no-startup-id "flameshot gui"
+
+#set keyboard to nodeadkeys norwegian
+
+bindsym $mod+control+n exec --no-startup-id 'setxkbmap -layout "no" -variant "nodeadkeys"'
