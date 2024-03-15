@@ -44,6 +44,9 @@ We use GNU Stow to populate symlinks where needed in your machine, run:
 $ ~/dotfiles
 $ stow .
 ```
+- Set download path for flameshot at dotfiles/config/flameshot/flameshot.ini. Canno't use ~ or $ path.
+- i3 Workspaces and screen outputs needs to be configured to your screen setup.
+- Nvim run packer to install packages
 
 ## Optional installation
 
