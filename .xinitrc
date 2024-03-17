@@ -3,4 +3,3 @@
 /usr/bin/pipewire-media-session &
 exec slstatus &
 exec dwm &
-setxkbmap -layout "no" -variant "nodeadkeys"
