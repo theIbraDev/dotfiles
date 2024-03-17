@@ -6,6 +6,9 @@ set $mod Mod4
 font pango:monospace 15px
 for_window [class=".*"] title_format "---"
 
+# set keyboard language
+exec_always --no-startup-id "setxkbmap -layout 'no' -variant 'nodeadkeys'"
+
 # Start i3 on statup.
 exec --no-startup-id dex --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
