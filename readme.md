@@ -100,3 +100,17 @@ If not, just use the official stable one:
 ```
 sudo pacman -S obs-studio
 ```
+
+#### Keyboard setup
+
+It's best to setup your keyboard with localectl
+
+```
+$ localectl status
+```
+to get your current setting
+
+- for norwegian with no deadkeys: 
+```
+$ localectl --no-convert set-x11-keymap no nodeadkeys
+```
