@@ -39,7 +39,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty 
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -234,4 +234,4 @@ bindsym $mod+Shift+m exec --no-startup-id "xrandr --output DP-1 --right-of eDP-1
 bindsym $mod+Shift+o exec --no-startup-id "xrandr --output DP-1 --off; sleep 3; i3 restart"
 
 # Take a screenshot flameshot
-bindsym $mod+Shift+control+s exec --no-startup-id "flameshot gui"
+bindsym $mod+Shift+s exec --no-startup-id "flameshot gui"
