@@ -11,15 +11,15 @@ Ensure you have the following installed on your system
 - [Flameshot](https://flameshot.org/)
 - [i3 Window Manager](https://i3wm.org/)
 - [Neovim](https://neovim.io/)
+- [Alacritty](https://alacritty.org)
 - [tmux](https://github.com/tmux/tmux)
-- [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
 - [Brave Browser](https://brave.com/)
 - [LibreOffice](https://www.libreoffice.org/)
 
 I will be using pacman. I use arch btw,
 #### Pacman install
 ```
-$ pacman -S git stow flameshot i3 nvim tmux kitty brave libreoffice
+$ pacman -S git stow flameshot i3 nvim tmux brave libreoffice
 ```
 
 ## Installation dotfiles
