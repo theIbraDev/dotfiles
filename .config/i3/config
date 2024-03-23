@@ -24,8 +24,6 @@ default_floating_border pixel 1
 hide_edge_borders smart
 
 # Size of the gaps between windows
-gaps inner 12
-gaps outer 12
 smart_gaps on
 
 # Use pactl to adjust volume in PulseAudio.
@@ -58,24 +56,24 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+shift+h move left
+bindsym $mod+shift+j move down
+bindsym $mod+shift+k move up
+bindsym $mod+shift+l move right
 
 #Orientation & Layouts
 bindsym $mod+b split h
 bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# bindsym $mod+s layout stacking
+bindsym $mod+shift+w layout tabbed
+bindsym $mod+shift+e layout toggle split
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+shift+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -152,33 +150,33 @@ bindsym $mod+8 workspace number $ws18
 bindsym $mod+9 workspace number $ws19
 bindsym $mod+0 workspace number $ws20
 #Move focused container to workspace
-bindsym mod1+Shift+1 move container to workspace number $ws1
-bindsym mod1+Shift+2 move container to workspace number $ws2
-bindsym mod1+Shift+3 move container to workspace number $ws3
-bindsym mod1+Shift+4 move container to workspace number $ws4
-bindsym mod1+Shift+5 move container to workspace number $ws5
-bindsym mod1+Shift+6 move container to workspace number $ws6
-bindsym mod1+Shift+7 move container to workspace number $ws7
-bindsym mod1+Shift+8 move container to workspace number $ws8
-bindsym mod1+Shift+9 move container to workspace number $ws9
-bindsym mod1+Shift+0 move container to workspace number $ws10
-bindsym $mod+Shift+1 move container to workspace number $ws11
-bindsym $mod+Shift+2 move container to workspace number $ws12
-bindsym $mod+Shift+3 move container to workspace number $ws13
-bindsym $mod+Shift+4 move container to workspace number $ws14
-bindsym $mod+Shift+5 move container to workspace number $ws15
-bindsym $mod+Shift+6 move container to workspace number $ws16
-bindsym $mod+Shift+7 move container to workspace number $ws17
-bindsym $mod+Shift+8 move container to workspace number $ws18
-bindsym $mod+Shift+9 move container to workspace number $ws19
-bindsym $mod+Shift+0 move container to workspace number $ws20
+bindsym mod1+shift+1 move container to workspace number $ws1
+bindsym mod1+shift+2 move container to workspace number $ws2
+bindsym mod1+shift+3 move container to workspace number $ws3
+bindsym mod1+shift+4 move container to workspace number $ws4
+bindsym mod1+shift+5 move container to workspace number $ws5
+bindsym mod1+shift+6 move container to workspace number $ws6
+bindsym mod1+shift+7 move container to workspace number $ws7
+bindsym mod1+shift+8 move container to workspace number $ws8
+bindsym mod1+shift+9 move container to workspace number $ws9
+bindsym mod1+shift+0 move container to workspace number $ws10
+bindsym $mod+shift+1 move container to workspace number $ws11
+bindsym $mod+shift+2 move container to workspace number $ws12
+bindsym $mod+shift+3 move container to workspace number $ws13
+bindsym $mod+shift+4 move container to workspace number $ws14
+bindsym $mod+shift+5 move container to workspace number $ws15
+bindsym $mod+shift+6 move container to workspace number $ws16
+bindsym $mod+shift+7 move container to workspace number $ws17
+bindsym $mod+shift+8 move container to workspace number $ws18
+bindsym $mod+shift+9 move container to workspace number $ws19
+bindsym $mod+shift+0 move container to workspace number $ws20
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -225,13 +223,13 @@ assign [title="^Steam$"] 14
 assign [title="^steam_app_"] 15
 
 # Turn on eDP-1
-bindsym $mod+Shift+n exec --no-startup-id "xrandr --output eDP-1 --auto; sleep 5; i3 restart"
+bindsym $mod+shift+n exec --no-startup-id "xrandr --output eDP-1 --auto; sleep 5; i3 restart"
 # turn off eDP-1
-bindsym $mod+Shift+i exec --no-startup-id "xrandr --output eDP-1 --off; sleep 3; i3 restart"
+bindsym $mod+shift+i exec --no-startup-id "xrandr --output eDP-1 --off; sleep 3; i3 restart"
 # turn on DP-1
-bindsym $mod+Shift+m exec --no-startup-id "xrandr --output DP-1 --right-of eDP-1 --auto; sleep 5; i3 restart"
+bindsym $mod+shift+m exec --no-startup-id "xrandr --output DP-1 --right-of eDP-1 --auto; sleep 5; i3 restart"
 # Turn off DP-1
-bindsym $mod+Shift+o exec --no-startup-id "xrandr --output DP-1 --off; sleep 3; i3 restart"
+bindsym $mod+shift+o exec --no-startup-id "xrandr --output DP-1 --off; sleep 3; i3 restart"
 
 # Take a screenshot flameshot
-bindsym $mod+Shift+s exec --no-startup-id "flameshot gui"
+bindsym $mod+shift+s exec --no-startup-id "flameshot gui"
