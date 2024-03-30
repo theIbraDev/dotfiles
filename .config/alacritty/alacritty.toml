@@ -10,8 +10,11 @@ import = [
 size = 15.0
 
 [font.normal]
-family = "firaCode"
-style = "Regular"
+family = "firacode"
+style = "regular"
 
 [env]
 TERM = "xterm-256color"
+
+[window]
+opacity = 0.6
