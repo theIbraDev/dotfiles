@@ -27,7 +27,7 @@ $ pacman -S git stow flameshot i3 nvim tmux brave libreoffice
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com/rossvold/dotfiles.git
+$ git clone git@github.com/theIbraDev/dotfiles.git
 $ cd dotfiles
 ```
 
