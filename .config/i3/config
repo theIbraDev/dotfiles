@@ -184,10 +184,10 @@ bindsym $mod+r mode "resize"
 # Control position and size of windows
 mode "resize" {
 # Manual size changes by 10 px or 10 ppt
-        bindsym l resize shrink width 10 px
-        bindsym h resize grow width 10 px
-        bindsym k resize shrink height 10 px
-        bindsym j resize grow height 10 px
+        bindsym l resize shrink width 50 px
+        bindsym h resize grow width 50 px
+        bindsym k resize shrink height 50 px
+        bindsym j resize grow height 50 px
 # Make the window a fixed size
 # Floating window center
 bindsym $mod+x resize set 2540 1410 ; move position center
