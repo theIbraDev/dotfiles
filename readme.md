@@ -7,13 +7,14 @@ Ensure you have the following installed on your system
 ### Requirements
 
 - [Git](https://git-scm.com/downloads)
+- [GH](https://cli.github.com/)
 - [Stow](https://www.gnu.org/software/stow/)
-- [Flameshot](https://flameshot.org/)
-- [i3 Window Manager](https://i3wm.org/)
+- [wayland](https://wayland.freedesktop.org/)
+- [hypr](https://hyprland.org/)
 - [Neovim](https://neovim.io/)
 - [Alacritty](https://alacritty.org)
+- [Kitty](https://sw.kovidgoyal.net/kitty/)
 - [tmux](https://github.com/tmux/tmux)
-- [Brave Browser](https://brave.com/)
 - [LibreOffice](https://www.libreoffice.org/)
 
 I will be using pacman. I use arch btw,
@@ -57,6 +58,7 @@ building with makepkg:
 
 Before you begin, make sure you have the `base-devel` package group installed.
 
+
 ```sh
 pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
@@ -87,6 +89,13 @@ pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git
 
 Use 'yay steam' to search for steam packages. From there you can install from the menu the packages you want.
 
+### Brave browser
+- [Brave Browser](https://brave.com/)
+
+```
+yay brave-bin
+```
+
 ### Open Broadcaster Software
 
 If the browser plugin is required, we have to use the AUR package obs-studio-git
@@ -99,18 +108,4 @@ If not, just use the official stable one:
 
 ```
 sudo pacman -S obs-studio
-```
-
-#### Keyboard setup
-
-It's best to setup your keyboard with localectl
-
-```
-$ localectl status
-```
-to get your current setting
-
-- for norwegian with no deadkeys: 
-```
-$ localectl --no-convert set-x11-keymap no nodeadkeys
 ```

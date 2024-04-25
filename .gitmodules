@@ -1,3 +1,9 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/theIbraDev/nvim.git
+[submodule "content"]
+	path = content
+	url = https://github.com/theIbraDev/content.git
+[submodule "1.private"]
+	path = 1.private
+	url = https://github.com/theIbraDev/1.private.git
