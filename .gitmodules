@@ -7,3 +7,6 @@
 [submodule "1.private"]
 	path = 1.private
 	url = https://github.com/theIbraDev/1.private.git
+[submodule "personal/private"]
+	path = personal/private
+	url = https://github.com/theIbraDev/1.private.git
