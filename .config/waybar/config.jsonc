@@ -1,7 +1,7 @@
 
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
   //"gtk-layer-shell": "false",
   "height": 46, // Waybar height (to be removed for auto height)
   // "width": 2560, // Waybar width
@@ -180,12 +180,12 @@
   },
 
   "custom/weather": {
-    "format": "{} °",
-    "tooltip": true,
-    "interval": 3600,
-    "exec": "wttrbar",
-    "return-type": "json"
-},
+      "format": "{} °",
+      "tooltip": true,
+      "interval": 3600,
+      "exec": "wttrbar",
+      "return-type": "json"
+  },
 
   "hyprland/language": {
       "format": " {}",
