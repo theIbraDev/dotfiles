@@ -16,9 +16,10 @@
       "cpu",
       "custom/gpu",
       "memory",
-      "temperature",
-      "disk",
+      "disk#1",
+      "disk#2",
       "upower",
+      "temperature",
       "network"
   ],
 
@@ -34,6 +35,14 @@
       "custom/weather",
       "hyprland/language"
   ],
+
+  "upower": {
+      "icon-size": 18,
+      "hide-if-empty": true,
+      "tooltip": false,
+      "tooltip-spacing": 20,
+      "tooltip-padding": 8,
+  },
 
   "cpu": {
       "interval": 1,
@@ -65,10 +74,23 @@
       "format-icons": ["", "", "", "", ""]
   },
 
-  "disk": {
+  "disk#2": {
     // "format": " {percentage_used}% ({free})",
     // "format": "💿 {free}",
-    "format": " {free}",
+    "path": "/home",
+    "format": " {free}",
+    "format-alt": " {percentage_used}% ({free})",
+    "tooltip": true,
+    "on-click-left": "kitty --title all_is_kitty sh -c 'ncdu'",
+    "on-click-right": "kitty --title all_is_kitty sh -c 'btop'",
+    "interval": 10
+  },
+
+  "disk#1": {
+    // "format": " {percentage_used}% ({free})",
+    // "format": "💿 {free}",
+    "path": "/",
+    "format": "/ {free}",
     "format-alt": " {percentage_used}% ({free})",
     "tooltip": true,
     "on-click-left": "kitty --title all_is_kitty sh -c 'ncdu'",
@@ -114,7 +136,7 @@
   "hyprland/window": {
       "format": "{}",
       "separate-outputs": true,
-      "max-length": 16,
+      "max-length": 36,
   },
 
   "pulseaudio": {
@@ -137,14 +159,6 @@
       "on-click-right": "kitty --class wm-floating --title all_is_kitty --hold --detach sh -c 'bluetoothctl'"
   },
 
-  "upower": {
-      "icon-size": 18,
-      "hide-if-empty": true,
-      "tooltip": false,
-      "tooltip-spacing": 20,
-      "tooltip-padding": 8,
-  },
-
   "tray": {
       "icon-size": 15,
       "spacing": 15
@@ -152,7 +166,7 @@
 
   "clock": {
       "format": " {:%H:%M  %d %b %Y}",
-      "format-alt": "{:%I:%M %p  %a %d}",
+      "format-alt": " {:%I:%M %p  %a %d}",
     //"format": "{:%R  📅 %d/%m}",
     //"format-alt": "{:%A, %B %d, %Y (%R)} 🗓️ ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
