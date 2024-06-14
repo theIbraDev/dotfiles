@@ -1,26 +1,6 @@
-# My dotfiles
-
-## Requirements
-
-Ensure you have the following installed on your system
-
-### Requirements
-
-- [Git](https://git-scm.com/downloads)
-- [GH](https://cli.github.com/)
-- [Stow](https://www.gnu.org/software/stow/)
-- [wayland](https://wayland.freedesktop.org/)
-- [hypr](https://hyprland.org/)
-- [Neovim](https://neovim.io/)
-- [Alacritty](https://alacritty.org)
-- [Kitty](https://sw.kovidgoyal.net/kitty/)
-- [tmux](https://github.com/tmux/tmux)
-- [LibreOffice](https://www.libreoffice.org/)
-
-I will be using pacman. I use arch btw,
 #### Pacman install
 ```
-$ pacman -S git stow flameshot i3 nvim tmux brave libreoffice
+$ pacman -S git stow flameshot nvim tmux brave libreoffice
 ```
 
 ## Installation dotfiles
@@ -45,9 +25,6 @@ We use GNU Stow to populate symlinks where needed in your machine, run:
 $ ~/dotfiles
 $ stow .
 ```
-- Set download path for flameshot at dotfiles/config/flameshot/flameshot.ini. Canno't use ~ or $ path.
-- i3 Workspaces and screen outputs needs to be configured to your screen setup.
-- Nvim run packer to install packages
 
 ## Optional installation
 
