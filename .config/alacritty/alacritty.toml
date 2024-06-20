@@ -3,14 +3,14 @@ import = [
   # "~/.config/alacritty/catppuccin-latte.toml"
   # "~/.config/alacritty/catppuccin-frappe.toml"
   # "~/.config/alacritty/catppuccin-macchiato.toml"
-  "~/.config/alacritty/theme.toml"
+  # "~/.config/alacritty/theme.toml"
 ]
 
 [font]
-size = 15.0
+size = 30.0
 
 [font.normal]
-#family = "firacode"
+family = "firacode"
 style = "regular"
 
 [env]
@@ -18,3 +18,6 @@ TERM = "xterm-256color"
 
 [window]
 opacity = 1.0
+
+[shell]
+program = "/bin/zsh"
