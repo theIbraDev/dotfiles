@@ -1,6 +1,12 @@
 #### Pacman install
+Does not include wm, or gpu drivers.
 ```
-$ pacman -S git stow flameshot nvim tmux brave libreoffice
+$ pacman -S git zsh wireplumber waybar stow grim slurp nvim tmux firefox libreoffice steam obs-studio
+```
+
+Programming stuff
+```
+$ pacman -S rustup luarocks luajit go npm pnpm alacritty
 ```
 
 ## Installation dotfiles
@@ -12,7 +18,7 @@ $ git clone git@github.com/theIbraDev/dotfiles.git
 $ cd dotfiles
 ```
 
-If you also want my nvim config, you need to populate git submodules:
+For submodules. Tmux and nvim
 ```
 $ cd dotfiles
 $ git submodule update --init --recursive
@@ -30,20 +36,6 @@ $ stow .
 
 ### yay
 
-The initial installation of Yay can be done by cloning the PKGBUILD and
-building with makepkg:
-
-Before you begin, make sure you have the `base-devel` package group installed.
-
-
-```sh
-pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-```
-
-If you want to do all of this at once, we can chain the commands like so:
 
 ```sh
 pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -61,28 +53,3 @@ pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git
 
 - Use `yay -Y --devel --save` to make development package updates permanently
   enabled (`yay` and `yay -Syu` will then always check dev packages)
-
-#### Usage of yay
-
-Use 'yay steam' to search for steam packages. From there you can install from the menu the packages you want.
-
-### Brave browser
-- [Brave Browser](https://brave.com/)
-
-```
-yay brave-bin
-```
-
-### Open Broadcaster Software
-
-If the browser plugin is required, we have to use the AUR package obs-studio-git
-
-- Yay is required for this.
-```
-yay obs-studio-git
-```
-If not, just use the official stable one:
-
-```
-sudo pacman -S obs-studio
-```
