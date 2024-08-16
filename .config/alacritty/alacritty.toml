@@ -1,13 +1,9 @@
 import = [
-  # uncomment the flavour you want below:
-  # "~/.config/alacritty/catppuccin-latte.toml"
-  # "~/.config/alacritty/catppuccin-frappe.toml"
-  # "~/.config/alacritty/catppuccin-macchiato.toml"
-  # "~/.config/alacritty/theme.toml"
+    "~/.config/alacritty/theme.toml"
 ]
 
 [font]
-size = 30.0
+size = 15.0
 
 [font.normal]
 family = "firacode"
