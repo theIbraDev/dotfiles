@@ -40,7 +40,7 @@
     "cpu": {
         "interval": 1,
         "format": " {load}",
-        "on-click-right": "kitty --class wm-floating --title all_is_kitty --hold --detach sh -c 'btop'",
+        "on-click-right": "kitty --class wm-floating --title all_is_kitty --hold sh -c 'btop'",
         "on-click-left": "kitty --class wm-floating --title all_is_kitty --hold --detach sh -c 'btop'"
     },
     "custom/gpu": {
